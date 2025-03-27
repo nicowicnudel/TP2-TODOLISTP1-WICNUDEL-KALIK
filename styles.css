@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(135deg, #1f73ac, #7cc1e0);
+    background: linear-gradient(to right, #1f73ac, #7cc1e0);
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,7 @@ body {
 .container {
     max-width: 400px;
     margin: 50px auto;
+    transform: scale(1.2);
     background: rgb(40, 118, 182);
     padding: 20px;
     border-radius: 10px;
