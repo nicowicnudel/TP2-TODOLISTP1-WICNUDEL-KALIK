@@ -11,9 +11,10 @@ body {
     margin: 50px auto;
     transform: scale(1.2);
     background: rgb(40, 118, 182);
+    background: linear-gradient(to right, rgb(40, 118, 182), #1c749c);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(135, 180, 238, 0.1);
 }
 
 .input-container {
