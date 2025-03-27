@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #4cbfe2;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 400px;
     margin: 50px auto;
-    background: white;
+    background: rgb(28, 82, 126);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,13 +29,13 @@ input {
 button {
     padding: 10px;
     border: none;
-    background: #007bff;
+    background: #102d4d;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #1f4268;
 }
 
 ul {
