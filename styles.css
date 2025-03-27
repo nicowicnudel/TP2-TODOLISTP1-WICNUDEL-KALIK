@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #4cbfe2;
+    background: linear-gradient(135deg, #1f73ac, #7cc1e0);
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 400px;
     margin: 50px auto;
-    background: rgb(28, 82, 126);
+    background: rgb(40, 118, 182);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ input {
 button {
     padding: 10px;
     border: none;
-    background: #102d4d;
+    background: #2a4b6e;
     color: white;
     cursor: pointer;
 }
