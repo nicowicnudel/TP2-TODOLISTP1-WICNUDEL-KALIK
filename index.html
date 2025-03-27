@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TODO List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Agregar una nueva tarea">
+            <button id="addTaskBtn">Agregar</button>
+        </div>
+        <div class="filters">
+            <button id="showAll">Todas</button>
+            <button id="showPending">Pendientes</button>
+            <button id="showCompleted">Completadas</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button id="clearCompleted">Eliminar Completadas</button>
+        <p id="fastestTask"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
