@@ -21,3 +21,16 @@ showAllBtn.addEventListener("click", () => renderTasks("all"));
 showPendingBtn.addEventListener("click", () => renderTasks("pending"));
 showCompletedBtn.addEventListener("click", () => renderTasks("completed"));
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
+
+function addTask() {
+    const taskText = taskInput.value.trim();
+    if (taskText === "") return;
+
+    const newTask = {
+        id: Date.now(),
+        text: taskText,
+        completed: false,
+        createdAt: new Date().toISOString(),
+        completedAt: null
+    };
+}
