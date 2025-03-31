@@ -11,7 +11,7 @@ body {
     margin: 50px auto;
     transform: scale(1.2);
     background: rgb(40, 118, 182);
-    background: linear-gradient(to right, rgba(245, 130, 130, 0.616), #df5151);
+    background: linear-gradient(to right, rgb(212, 192, 192), #ee9999);
     padding: 20px;
     border-radius: 10px;
 }

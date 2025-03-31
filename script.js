@@ -88,3 +88,24 @@ function clearCompletedTasks() {
     saveTasks();
     renderTasks();
 }
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleString();
+}
+
+function displayFastestTask() {
+    const completedTasks = tasks.filter(task => task.completed && task.completedAt);
+    if (completedTasks.length === 0) {
+        fastestTaskDisplay.textContent = "";
+        return;
+    }
+    
+    let fastest = completedTasks.reduce((fastest, task) => {
+        const timeTaken = new Date(task.completedAt) - new Date(task.createdAt);
+        return timeTaken < fastest.timeTaken ? { task, timeTaken } : fastest;
+    }, { task: null, timeTaken: Infinity });
+    
+    fastestTaskDisplay.textContent = `Tarea completada más rápido: "${fastest.task.text}" en ${fastest.timeTaken / 1000} segundos.`;
+}
+
