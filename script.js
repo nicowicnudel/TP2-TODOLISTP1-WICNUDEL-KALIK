@@ -33,4 +33,8 @@ function addTask() {
         createdAt: new Date().toISOString(),
         completedAt: null
     };
+    tasks.push(newTask);
+    saveTasks();
+    renderTasks();
+    taskInput.value = "";
 }
