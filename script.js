@@ -16,3 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Enter") addTask();
     });
 });
+
+showAllBtn.addEventListener("click", () => renderTasks("all"));
+showPendingBtn.addEventListener("click", () => renderTasks("pending"));
+showCompletedBtn.addEventListener("click", () => renderTasks("completed"));
+clearCompletedBtn.addEventListener("click", clearCompletedTasks);
