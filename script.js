@@ -82,3 +82,9 @@ window.deleteTask = (id) => {
     saveTasks();
     renderTasks();
 };
+
+function clearCompletedTasks() {
+    tasks = tasks.filter(task => !task.completed);
+    saveTasks();
+    renderTasks();
+}
