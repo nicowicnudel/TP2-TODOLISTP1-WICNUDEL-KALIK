@@ -38,3 +38,26 @@ function addTask() {
     renderTasks();
     taskInput.value = "";
 }
+
+function renderTasks(filter = "all") {
+    taskList.innerHTML = "";
+    let filteredTasks = tasks.filter(task => {
+        if (filter === "pending") return !task.completed;
+        if (filter === "completed") return task.completed;
+        return true;
+    });
+    
+    filteredTasks.forEach(task => {
+        const li = document.createElement("li");
+        li.className = task.completed ? "completed" : "";
+        li.innerHTML = `
+            <span>${task.text} <small>(${formatDate(task.createdAt)})</small></span>
+            <div>
+                <button onclick="toggleComplete(${task.id})">✔</button>
+                <button onclick="deleteTask(${task.id})">❌</button>
+            </div>
+        `;
+        taskList.appendChild(li);
+    });
+    displayFastestTask();
+}
