@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #be1414, #d16d6d);
+    background: linear-gradient(to right, #e62525, #d16d6d);
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ body {
     margin: 50px auto;
     transform: scale(1.2);
     background: rgb(40, 118, 182);
-    background: linear-gradient(to right, rgba(196, 43, 43, 0.616), #df5151);
+    background: linear-gradient(to right, rgba(245, 130, 130, 0.616), #df5151);
     padding: 20px;
     border-radius: 10px;
 }
