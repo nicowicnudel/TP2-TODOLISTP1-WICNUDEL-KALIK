@@ -61,3 +61,24 @@ function renderTasks(filter = "all") {
     });
     displayFastestTask();
 }
+
+
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+window.toggleComplete = (id) => {
+    tasks = tasks.map(task => {
+        if (task.id === id) {
+            task.completed = !task.completed;
+            task.completedAt = task.completed ? new Date().toISOString() : null;
+        }
+        return task;
+    });
+    saveTasks();
+    renderTasks();
+};
+window.deleteTask = (id) => {
+    tasks = tasks.filter(task => task.id !== id);
+    saveTasks();
+    renderTasks();
+};
