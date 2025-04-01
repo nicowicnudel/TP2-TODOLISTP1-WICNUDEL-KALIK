@@ -1,9 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #A0C878, #143D60);
+    background: #143D60;
     margin: 0;
     padding: 0;
+}
+
+h1{
+    color: #143D60;
 }
 
 .container {
@@ -11,7 +15,7 @@ body {
     margin: 50px auto;
     transform: scale(1.2);
     background: rgb(40, 118, 182);
-    background:#27667B;
+    background:#8AB2A6;
     padding: 20px;
     border-radius: 10px;
 }
